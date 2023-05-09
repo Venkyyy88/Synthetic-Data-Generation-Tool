@@ -1,6 +1,6 @@
 # SynthiCAD
 
-![logo](docs\ReadMe_files\logo.PNG)
+![logo](Synthetic-Data-Generation-Tool\docs\ReadMe_files\logo.PNG)
 
 ## _Synthetic Data Generation Tool_
 
