@@ -2,12 +2,9 @@ import blenderproc as bproc
 import os
 import argparse
 import numpy as np
-import pydevd_pycharm
 import glob
 import json
 import re
-
-pydevd_pycharm.settrace('localhost', port=12345, stdoutToServer=True, stderrToServer=True)
 
 # define arguments
 parser = argparse.ArgumentParser()
@@ -19,7 +16,7 @@ args = parser.parse_args()
 bproc.init()
 
 # Open the JSON file and read its contents
-with open('code/User_Configuration.json', 'r') as file:
+with open('code/config.json', 'r') as file:
     data = file.read()
 
 # Remove comment lines using a regular expression
@@ -62,6 +59,7 @@ light_plane.set_name('light_plane')
 light_plane_material = bproc.material.create('light_material')
 light_plane_material.make_emissive(emission_strength=3.5, replace=True)
 light_plane.replace_materials(light_plane_material)
+
 # set the camera resolution
 bproc.camera.set_resolution(img_width, img_height)
 

@@ -6,7 +6,7 @@
   "coco": true,
 
   //Whether to use HDF5 format for saving images and annotations
-  "hdf5": true,
+  "hdf5": false,
 
   //Whether to split the dataset into training, validation, and testing sets
   "dataset_split": true,
