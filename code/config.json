@@ -46,7 +46,7 @@
   "focus_objects": true,
 
   //Objects to focus on  during image generation
-  "focus_obj": ["star", "screw"],
+  "focus_obj": ["engine_part_cooler_square", "engine_part_cooler_round"],
 
   //Threshold value for setting border values
   "border_threshold": 0.0000001
